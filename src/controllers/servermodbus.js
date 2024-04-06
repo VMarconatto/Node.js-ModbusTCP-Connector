@@ -9,7 +9,6 @@ const server = new modbus.server.TCP(netServer, {
 })
 
 const { error } = require('console')
-const hosts = `192.168.1.13`
 const { disconnect } = require('process')
 
 
