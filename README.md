@@ -45,6 +45,7 @@ Copiar código
 ├── mongo.js
 ├── servermodbus.js        (ou src/controllers/servermodbus.js, conforme o repo)
 └── .env                   (connectionstring para o MongoDB)
+
 ⚙️ Configuração
 1️⃣ Variáveis de ambiente (.env)
 Crie um arquivo .env na raiz do projeto:
