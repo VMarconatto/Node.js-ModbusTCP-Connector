@@ -8,9 +8,9 @@ const hosts = `192.168.1.13`
 const ping = require('ping')
 
 client.connect().then(console.log(`Mongo Client Connected`)).catch((e) => console.log(e))
-const aggDB = client.db("MilkMaster").collection("MilkReceptions")
+const aggDB = client.db("Master").collection("Receptions")
 
-class MilkReception {
+class Reception {
     constructor() {
     }
     crudMDB() {
@@ -89,14 +89,14 @@ class MilkReception {
 
 }
 
-const MillReceptionMBTCP = new MilkReception()
+const ReceptionMBTCP = new Reception()
 
 async function start() {
 
     setInterval(() => {
         ping.sys.probe(hosts, (isAlive) => {
-            var msg = isAlive ? console.log(`Host MB Partner: ${hosts} is alive`) + MillReceptionMBTCP.crudMDB():
-            console.log(`Host MB Partner: ${hosts} is not alive`) + MillReceptionMBTCP.mbdatafail()
+            var msg = isAlive ? console.log(`Host MB Partner: ${hosts} is alive`) + ReceptionMBTCP.crudMDB():
+            console.log(`Host MB Partner: ${hosts} is not alive`) + ReceptionMBTCP.mbdatafail()
         })
     }, 2000)
 
