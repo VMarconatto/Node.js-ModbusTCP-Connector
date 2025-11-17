@@ -17,15 +17,15 @@ Foi testado com o simulador **SIMATIC PLC Sim Advanced 4.0** (Siemens), enviando
 
 ```text
    +-------------------------+       ModbusTCP       +------------------------+
-   |  SIMATIC PLCSIM Adv.   |  ------------------>  |  Node.js Modbus Server |
-   |  (ou outro PLC/Sim)    |                       |  (jsmodbus + net)      |
+   |  SIMATIC PLCSIM Adv.    | ------------------>  |  Node.js Modbus Server  |
+   |  (ou outro PLC/Sim)     |                      |  (jsmodbus + net)       |
    +-------------------------+                       +-----------+------------+
                                                                |
                                                                | Buffer (holding registers)
                                                                |
                                                     +----------v-----------+
                                                     |   mongo.js           |
-                                                    |  (MilkReception)     |
+                                                    |  (Reception)         |
                                                     |                      |
                                                     |  - Ping no host      |
                                                     |  - Lê holding        |
@@ -35,8 +35,8 @@ Foi testado com o simulador **SIMATIC PLC Sim Advanced 4.0** (Siemens), enviando
                                                                v
                                                       +------------------+
                                                       | MongoDB          |
-                                                      | Master DB    |
-                                                      | Receptions   |
+                                                      | Master DB        |
+                                                      | Receptions       |
                                                       +------------------+
 📁 Estrutura do Projeto
 text
@@ -48,11 +48,6 @@ Copiar código
 ⚙️ Configuração
 1️⃣ Variáveis de ambiente (.env)
 Crie um arquivo .env na raiz do projeto:
-
-env
-Copiar código
-connectionstring=mongodb://usuario:senha@host:27017
-A string deve apontar para o seu cluster/instância MongoDB.
 
 2️⃣ Dependências
 Instale as dependências necessárias:
