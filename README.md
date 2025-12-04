@@ -1,6 +1,6 @@
 # 🏭 Node.js ModbusTCP + MongoDB
 
-Este projeto foi um dos meus primeiros estudos em **IoT Industrial**
+Este Repositório é uma simples interação do Node.js com PLC de simulação Simatic PLC SIM Advanced 3.0. 
 
 Ele demonstra:
 
@@ -122,9 +122,6 @@ todos os campos de PV serão null
 ModbusTCPFail será true
 
 🎯 Objetivo Educacional
-Este projeto marcou o início dos meus estudos em:
-
-IoT Industrial
 
 Protocolos de campo (Modbus TCP)
 
