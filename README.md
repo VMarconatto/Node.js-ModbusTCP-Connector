@@ -1,6 +1,6 @@
 # 🏭 Node.js ModbusTCP + MongoDB
 
-Este Repositório é um simples conexão do Node.js com PLC de simulação Simatic PLC SIM Advanced 3.0. 
+Este Repositório é um simples conexão do Node.js com PLC de simulação Simatic PLC SIM Advanced 4.0. 
 
 Ele demonstra:
 
